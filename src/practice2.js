@@ -5,11 +5,6 @@
 //     case "+":
 //         var res = parseFloat(num1)+parseFloat(num2);
 //         console.log(`${num1}+${num2} is = ${res}`)
-
-//const { reverse } = require("lodash");
-
-// const { replace } = require("lodash")
-
 //         break;
 //     case "-":
 //     var res = parseFloat(num1)-parseFloat(num2);
@@ -147,7 +142,7 @@ function reverseAString(argsString) {
 reverseAString(mySentance);
 
 // programm to count a word in a string;
-let myString = "aaaaaabbbbbbbbbbbbbcdefghkkkakkkkk";
+let myString = "my name is alok";
 let count = "c";
 function findNumberofOccurances(tempString, count) {
   let counter = 0;
@@ -157,5 +152,6 @@ function findNumberofOccurances(tempString, count) {
     }
   }
   console.log(counter);
+  return counter;
 }
 findNumberofOccurances(myString, count);
