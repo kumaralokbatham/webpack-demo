@@ -123,35 +123,82 @@
 // let resultString = string.replace('this','dd' );
 // console.log(resultString );
 
-
 // Programm To reverse as string using for loop
-let mySentance = "madama";
-function reverseAString(argsString) {
-  let newString = "";
-  for (let i = argsString.length - 1; i >= 0; i--) {
-    newString += argsString[i];
-  }
-  console.log(newString);
-  if(newString === argsString) {
-    console.log("Your string is palindrom")
-  }else {
-    console.log("Your string is not palindrom")
-  }
-  return newString;
-}
-reverseAString(mySentance);
+// let mySentance = "madama";
+// function reverseAString(argsString) {
+//   let newString = "";
+//   for (let i = argsString.length - 1; i >= 0; i--) {
+//     newString += argsString[i];
+//   }
+//   console.log(newString);
+//   if(newString === argsString) {
+//     console.log("Your string is palindrom")
+//   }else {
+//     console.log("Your string is not palindrom")
+//   }
+//   // document.getElementById('mydiv').innerText = newString;
+//   return newString;
+// }
+// reverseAString(mySentance);
 
 // programm to count a word in a string;
-let myString = "my name is alok";
-let count = "c";
-function findNumberofOccurances(tempString, count) {
-  let counter = 0;
-  for (let i = 0; i < tempString.length; i++) {
-    if (tempString[i] == count) {
-      counter++;
-    }
+// let myString = "my name is alok";
+// let count = "e";
+// function findNumberofOccurances(tempString, count) {
+//   let counter = 0;
+//   for (let i = 0; i < tempString.length; i++) {
+//     if (tempString[i] == count) {
+//       counter++;
+//     }
+//   }
+//   console.log(counter);
+//   document.getElementById('mydiv').innerText = counter;
+//   return counter;
+// }
+// findNumberofOccurances(myString, count);
+
+// Find vowels in a given number:
+
+//let myString = "Regex is used for  match ,test,and find in a given String ";
+// const reg = /[aeiou]/gi;// gi reprent here g for global i for ignore case sensitivity
+
+// function findVowels() {
+//   let chars = myString.match(reg);
+//   console.log(chars.length);
+//   console.log(chars.join(","));
+// }
+// findVowels(myString, reg);
+
+//    A string Start and End with a certain character....
+function checkCharacter(mySentance) {
+  mySentance = mySentance.toLowerCase();
+  let testStart = mySentance.startsWith("p");
+  let testEnd = mySentance.endsWith("t");
+  if (testStart == true && testEnd == true) {
+    console.log("Given String Start with P and End with t");
+  } else {
+    console.log("Given String Not Start with P and End with t");
   }
-  console.log(counter);
-  return counter;
 }
-findNumberofOccurances(myString, count);
+
+document.getElementById("my-btn").addEventListener("click", () => {
+  const inputString = document.getElementById("my-input").value;
+  checkCharacter(inputString);
+});
+
+// Program to Check Palindrome using built-in Functions in Javascript
+
+// function palindrom(){
+//  let myString = "dad";
+
+//   let stringArray = myString.split('');
+//   let revArray = stringArray.reverse().join('');
+//   console.log(revArray);
+//   if(myString==revArray){
+//     console.log(`${myString} is a Palindrome`);
+//   }
+//   else{
+//     console.log(`${myString} is not a Palindrome`);
+//   }
+// }
+// palindrom();
